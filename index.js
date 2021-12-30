@@ -5,7 +5,7 @@ app.set('PORT', process.env.PORT || 3000)
 
 app.get('/', (req, res) => {
     res.status(200).send({
-        message: 'How do I deploy my code to Heroku?',
+        message: 'How do I deploy my code to Heroku today?',
     })
 })
 
