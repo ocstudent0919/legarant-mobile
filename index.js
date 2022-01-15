@@ -1,15 +1,15 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const app = express();
 
-app.set('PORT', process.env.PORT || 3000)
+app.set("PORT", process.env.PORT || 3000);
 
-app.get('/', (req, res) => {
-    res.status(200).send({
-        message: 'How do I deploy my app to Heroku today?',
-        date: new Date().toLocaleString(),
-    })
-})
+app.get("/", (req, res) => {
+  res.status(200).send({
+    message: "How do I deploy my app to Heroku today?",
+    //  date: new Date().toLocaleString(),
+  });
+});
 
-app.listen(app.get('PORT'), () =>
-    console.log(`Server running on port ${app.get('PORT')}`),
-)
+app.listen(app.get("PORT"), () =>
+  console.log(`Server running on port ${app.get("PORT")}`)
+);
